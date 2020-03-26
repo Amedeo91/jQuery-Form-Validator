@@ -1,7 +1,7 @@
 {
   "name": "jquery-form-validator",
   "description": "With this feature rich jQuery plugin it becomes easy to validate user input while keeping your HTML markup clean from javascript code. Even though this plugin has a wide range of validation functions it's designed to require as little bandwidth as possible. This is achieved by grouping together validation functions in \"modules\", making it possible for the programmer to load only those functions that's needed to validate a particular form.",
-  "version": "2.3.79",
+  "version": "2.3.80",
   "main": "./form-validator/jquery.form-validator.min.js",
   "keywords": [
     "form",
@@ -10,10 +10,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/victorjonsson/jQuery-Form-Validator.git"
+    "url": "git+https://github.com/Amedeo91/jQuery-Form-Validator.git"
   },
   "bugs": {
-    "url": "https://github.com/victorjonsson/jQuery-Form-Validator/issues"
+    "url": "https://github.com/Amedeo91/jQuery-Form-Validator/issues"
   },
   "author": {
     "name": "Victor Jonsson",
@@ -37,10 +37,10 @@
     "grunt-umd": "~2.4.0",
     "numeral": "~1.5.3",
     "qunitjs": "^1.20.0",
-    "jquery": "2.2.4"
+    "jquery": "3.4.0"
   },
   "dependencies": {
-    "jquery": "2.2.4"
+    "jquery": "3.4.0"
   },
   "scripts": {
     "prepublish": "grunt prepublish",
