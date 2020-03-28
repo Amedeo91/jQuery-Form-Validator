@@ -54,7 +54,9 @@
 		if(!elemName){
 			elemName = elAttr.id
 		}
-		elAttr.name = elemName
+		if (!elAttr.name){
+			elAttr.name = elemName
+		}
 		var newInput = document.createElement("input");
 		newInput.id = elAttr.id;
 		try{
@@ -211,7 +213,7 @@
        */
       test('Validation of hidden inputs', function(assert) {
         clearForm();
-        assert.expect(3);
+        assert.expect(2);
         var $input = input('--', {'':'required alphanumeric'});
         assert.equal(false, $input.closest('form').isValid({}, {}, false));
         $input.hide();
@@ -219,6 +221,7 @@
         $input.validate(function(valid) {
           assert.equal(false, valid);
         }, {validateHiddenInputs: true});
+		// $form.submit(function(e){ return false; });
       });
 
         /*
@@ -965,6 +968,7 @@
 
             $inputB.val('hejsan');
             result = $.formUtils.validateInput($inputA, $.formUtils.LANG, $.formUtils.defaultConfig(), $form);
+			console.log(result)
             equal(
                 result.isValid,
                 true,
@@ -986,6 +990,7 @@
 
             $inputD.val('value');
             result = $.formUtils.validateInput($inputC, $.formUtils.LANG, $.formUtils.defaultConfig(), $form);
+			console.log(result)
             equal(
                 result.isValid,
                 true,
