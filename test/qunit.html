@@ -61,7 +61,7 @@
 		newInput.id = elAttr.id;
 		try{
             // $in.appendTo($form);
-			$form.append(newInput);
+			$('#dummy-form').append(newInput);
 		} catch(e){
 			console.log(e);
 			throw(e);
@@ -213,7 +213,7 @@
        */
       test('Validation of hidden inputs', function(assert) {
         clearForm();
-        assert.expect(2);
+        assert.expect(3);
         var $input = input('--', {'':'required alphanumeric'});
         assert.equal(false, $input.closest('form').isValid({}, {}, false));
         $input.hide();
@@ -221,7 +221,6 @@
         $input.validate(function(valid) {
           assert.equal(false, valid);
         }, {validateHiddenInputs: true});
-		// $form.submit(function(e){ return false; });
       });
 
         /*
