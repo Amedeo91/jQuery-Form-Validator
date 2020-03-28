@@ -1,6 +1,6 @@
 # jQuery Form Validator
 
-[![Travis](https://travis-ci.org/victorjonsson/jQuery-Form-Validator.svg)](https://travis-ci.org/victorjonsson/jQuery-Form-Validator/builds/)
+[![Travis](https://travis-ci.org/Amedeo91/jQuery-Form-Validator.svg)](https://travis-ci.org/Amedeo91/jQuery-Form-Validator/builds/)
 
 [![npm version](https://badge.fury.io/js/jquery-form-validator.svg)](https://www.npmjs.com/package/jquery-form-validator)
 
