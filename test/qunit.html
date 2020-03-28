@@ -18,6 +18,16 @@
 <script>
 (function($) {
 
+    function makeid(length) {
+	    var result           = '';
+	    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+	    var charactersLength = characters.length;
+	    for ( var i = 0; i < length; i++ ) {
+		    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+	    }
+	    return "WWWWWWW" + result;
+	}
+
     var $form = $('#dummy-form'), $in=null;
     window.$form = $form;
     window.$in = $in;
@@ -38,8 +48,24 @@
         }
 
         elAttr['value'] = val;
-        $in = $('<'+(elemName || 'input')+' />', elAttr);
-        $in.appendTo($form);
+		if (!elAttr.id){
+			elAttr.id = elemName ? elemName : makeid(20);
+		}
+		if(!elemName){
+			elemName = elAttr.id
+		}
+		elAttr.name = elemName
+		var newInput = document.createElement("input");
+		newInput.id = elAttr.id;
+		try{
+            // $in.appendTo($form);
+			$form.append(newInput);
+		} catch(e){
+			console.log(e);
+			raise(e)
+		}
+		$in = $("#" + elAttr.id)
+		$in.attr(elAttr)
         return $in;
     }
 
