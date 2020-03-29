@@ -7,7 +7,7 @@
         "validation",
         "validator"
     ],
-    "version": "2.3.80",
+    "version": "2.3.82",
     "author": {
         "name": "Victor Jonsson",
         "url": "http://victorjonsson.se",
@@ -16,7 +16,7 @@
     "homepage": "http://formvalidator.net",
     "demo": "http://formvalidator.net",
     "download": "http://formvalidator.net",
-    "bugs": "https://github.com/victorjonsson/jQuery-Form-Validator/issues",
+    "bugs": "https://github.com/Amedeo91/jQuery-Form-Validator/issues",
     "license": "MIT",
     "dependencies": {
         "jquery": ">=3.4"
