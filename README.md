@@ -1,8 +1,10 @@
-# jQuery Form Validator
+# jQuery Form Validator 
+
+This is the fork of https://github.com/victorjonsson/jQuery-Form-Validator which is not discontinued.
 
 [![Travis](https://travis-ci.org/Amedeo91/jQuery-Form-Validator.svg)](https://travis-ci.org/Amedeo91/jQuery-Form-Validator/builds/)
 
-[![npm version](https://badge.fury.io/js/jquery-form-validator.svg)](https://www.npmjs.com/package/jquery-form-validator)
+[![npm version](https://badge.fury.io/js/jquery-form-validator.svg)](https://www.npmjs.com/package/jquery-forms-validator)
 
 *Usage example*
 
