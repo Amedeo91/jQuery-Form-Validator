@@ -29,7 +29,12 @@
      * @return {Boolean}
      */
     hasLoadedModule: function (name) {
-      return $.trim(name).toLowerCase() in this.loadedModules;
+      var moduleName = $.trim(name).toLowerCase();
+      var hasModule = moduleName in this.loadedModules;
+      if (!hasModule){
+        hasModule = moduleName.slice(0, -3) in this.loadedModules;
+      }
+      return hasModule;
     },
 
     /**
